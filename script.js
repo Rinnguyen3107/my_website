@@ -17,13 +17,14 @@ function tinh(){
   let gpa = parseFloat(document.getElementById("gpa").value);
   let total = parseInt(document.getElementById("total").value);
   let expect = parseFloat(document.getElementById("expect").value);
-  let passAV = parseInt(document.getElementById("co").value);
+  let passAV = (document.getElementById("co").checked);
   if(passAV) total -= 8;
   let remain = total-tin;
   let res = (total*expect-tin*gpa)/remain;
   let box = (document.getElementById("box"));
   box.innerText = "Số điểm cần phải đạt được trung bình mỗi tín: " + res.toString()
   console.log("Số điểm cần phải đạt được trung bình mỗi tín: ", res);
+  console.log("mo log cai nay ra cai j: ",passAV);
 
 }
 let pos = 0;
