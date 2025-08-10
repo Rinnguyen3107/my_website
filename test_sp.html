@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head class = "head_cua_test">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Cái này là về tôi </title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body class = "test_spp">
+        <header>
+            <h1>Xin chào mọi người!</h1>
+            <nav class="navbar">
+            <ul class="menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="test_sp.html">Liên hệ</a></li>
+            </ul>
+            </nav>
+        </header>
+        <form class = "cho_nhap">
+            <label for = "tin">Số tín chỉ: </label>
+            <input type="text" id="tin" name="so_tin">
+            <label for = "total" >Tổng số tín chỉ: </label>
+            <input type="text" id = "total">
+            <label>
+                Đã nộp bằng ielst pass full tiếng anh!
+                <input type="checkbox" id="co">
+            </label><br><br>
+            <label for = "gpa">Gpa hiện tại: </label>
+            <input type="text" id="gpa" name="diem">
+            <label for = "expect">Gpa mong muốn: </label>
+            <input type="text" id="expect"><br><br>
+            
+            <button type = "button" id="che" onclick="tinh()">Generate</button>
+        </form>
+        <div class = "box" id = "box">
+            Số điểm cần phải đạt được trung bình mỗi tín: 
+        </div> 
+        <button type="button" id="te" onclick="move()">move</button>
+        
+    </body>
+        <script src = "script.js"></script>
+
+</html>
